@@ -62,7 +62,7 @@
 	}*/
 //Ładowanie informacji
 	var xmlhttp = new XMLHttpRequest();
-	var url = "https://freod.github.io/skrypts/informacje.json";
+	var url = "https://freod.github.io/projekt_WIA_2017/skrypts/informacje.json";
 
 	xmlhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
