@@ -1,32 +1,32 @@
 [
 {
 	"info":"Nad brzegiem Zatoki w Helu znajduje się Stacja Morska Uniwersytetu Gdańskiego - placówka badawcza prowadząca działalność naukową i edukacyjną.Sławę jednak zyskała dzięki pierwszemu w Polsce fokarium, w którego basenach pływają foki szare. Niegdyś był to powszechny gatunek zasiedlający Bałtyk, później niemal całkowicie wytępiony za sprawą polowań. Stacja opiekuje się chorymi i słabymi osobnikami oraz prowadzi rozród młodych foczek, wypuszczanych do naturalnego środowiska. Tym sposobem stacja w Helu chce odtworzyć naturalne stada tych przemiłych zwierząt, których zwyczaje i codzienne igraszki można podpatrzeć w helskim fokarium.",
-	"obraz":"imgs/fokarium.jpg",
+	"obraz":"https://www.freod.github.io/projekt_WIA_2017/imgs/fokarium.jpg",
 	"wiecej":"http://www.hel.ug.edu.pl/"
 },
 {
 	"info":"Centrum Hewelianum zaprasza do niesamowitego świata nauki! Cztery stałe wystawy interaktywne porwą Was w pasjonującą i inspirującą podróż - powrócicie z niej odmienieni... Różnorodne atrakcje gdańskiego centrum nauki odkryją przed Wami niezwykłość otaczającego świata i naukowe zagadki. Park wokół Centrum Hewelianum, z jedynymi w swoim rodzaju punktami widokowymi, pozwoli Wam zobaczyć Gdańsk z zupełnie nowej perspektywy.",
-	"obraz":"imgs/hewelianum.jpg",
+	"obraz":"https://www.freod.github.io/projekt_WIA_2017/imgs/hewelianum.jpg",
 	"wiecej":"http://www.hewelianum.pl/"
 },
 {
 	"info":"Na obszarze około 125 hektarów mieszkają tu zwierzęta pochodzące ze wszystkich kontynentów. Są wśród nich takie, których populacje na wolności już właściwie nie istnieją. Gwałtowny rozwój techniczny, wzrost zanieczyszczenia naturalnego środowiska spowodowały, że niektóre gatunki zwierząt mogą żyć bezpiecznie jedynie w ogrodach zoologicznych.",
-	"obraz":"imgs/zoo.jpg",
+	"obraz":"https://www.freod.github.io/projekt_WIA_2017/imgs/zoo.jpg",
 	"wiecej":"https://www.zoo.gda.pl/"
 },
 {
 	"info":"Zabytkowy ratusz na Głównym Mieście w Gdańsku. Jest to gotycko-renesansowa budowla, usytuowana na styku ulicy Długiej i Długiego Targu, która dominuje nad panoramą Drogi Królewskiej, najbardziej reprezentacyjnego traktu tej części miasta. W ratuszu Głównego Miasta mieści się Muzeum Historyczne Miasta Gdańska.",
-	"obraz":"imgs/ratusz.jpg",
+	"obraz":"https://www.freod.github.io/projekt_WIA_2017/imgs/ratusz.jpg",
 	"wiecej":"http://www.mhmg.pl/oddzial/10/the-main-town-hall"
 },
 {
 	"info":"Żuraw - zabytkowy (wpisany do rejestru zabytków od 18.12.1959) dźwig portowy i jedna z bram wodnych Gdańska, która mieści się nad Motławą, na końcu ulicy Szerokiej. Jest to jedna z filii Centralnego Muzeum Morskiego w Gdańsku oraz największy i najstarszy z zachowanych dźwigów portowych średniowiecznej Europy",
-	"obraz":"imgs/zuraw.jpg",
+	"obraz":"https://www.freod.github.io/projekt_WIA_2017/imgs/zuraw.jpg",
 	"wiecej":"http://www.en.cmm.pl/zuraw"
 },
 {
 	"info":"Molo to jeden z najpopularniejszych polskich obiektów rekreacyjno-imprezowych, wizytówka kurortu. Obiekt składa się z 2 części: drewnianej i lądowej. Część drewniana (spacerowa) obejmuje, oprócz głównego pomostu ( 511,5 m z czego 458 m wchodzi w głąb Zatoki Gdańskiej), pokłady dolne oraz pokład boczny, które umożliwają przybijanie statków pasażerskich oraz jachtów.",
-	"obraz":"https://freod.github.io/imgs/molo.jpg",
+	"obraz":"https://www.freod.github.io/projekt_WIA_2017/imgs/molo.jpg",
 	"wiecej":"http://molo.sopot.pl/"
 }
 ]
