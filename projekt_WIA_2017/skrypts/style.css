@@ -1,11 +1,13 @@
-﻿body{
+﻿/*Body i jego tło*/
+body{
 	background-image: url("https://freod.github.io/projekt_WIA_2017/imgs/tlo.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
 	background-size:cover;
-	max-width:150%;
+	max-width:100%;
 }
+/*Menu*/
 div.menu{
 	background-color: #000;
 	height: 52px;
@@ -16,84 +18,62 @@ div.menu{
 	width: 100%;
 	z-index: 1;
 }
-a.komorka_menu{
-	color: orange;
-	font-size: 13px;
-	font-weight: 700;
-	line-height: 48px;
-	display: inline-block;
-	margin: 0 .85em;
-	text-decoration: none;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	text-transform: uppercase;
-	transition: color 1s;
-	text-shadow:1px 3px 3px #E47833;
-}
-a.komorka_menu:hover{
-	color: #FFF;
-}
-/*.test{
-	display: inline-block;
-}
-ul{
-	display: block;
-}
-/*li{
-	color: orange;
-	font-size: 13px;
-	font-weight: 700;
-	line-height: 48px;
-	display: inline-block;
-	margin: 0 .85em;
-	text-decoration: none;
-	padding-top: 2px;
-	/*border-bottom: 4px solid orange;
-	text-transform: uppercase;
-	transition: color 1s;
-	text-shadow:1px 3px 3px #E47833;
-}*/
 /*ol{
-	display: inline-block;
+	text-align: center;
+}*/
+ol > li{
+	position: absolute;
 }
-.rozwijane_menu:hover{
-	color: #FFF;
+/*Ułożenie*/
+ol > li:nth-child(1){
+	left: 39%;
 }
-li.rozwijane_menu{
-	color: orange;
-	font-size: 13px;
-	font-weight: 700;
-	line-height: 48px;
-	display: block;
-	margin: 0 .85em;
-	text-decoration: none;
-	padding-top: 2px;
-	border-bottom: 4px solid orange;
-	text-transform: uppercase;
-	transition: color 1s;
-	text-shadow:1px 3px 3px #E47833;	
+ol > li:nth-child(2){
+	left: 50%;
+}
+ol > li:nth-child(3){
+	left: 60%;
 }
 ul{
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
 	display: none;
 }
-li{
-	background-color: #000;
-	margin: 0 .85em;
-	padding-bottom: 2px;
-	transition: color 1s;
+li:hover{
+	cursor: pointer;
+	color: #FFF;
 }
-li.rozwijane_menu:hover > ul{
+ol > li:hover > ul{
+	display: block;
+}
+li, li > a{
+	color: orange;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 48px;
+	margin: 0 .85em;
+	text-decoration: none;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-transform: uppercase;
+	transition: color 1s;
+	text-shadow:1px 3px 3px #E47833;
+	text-decoration: none;
+	background-color: #000;
+	/*width: 150px;*/
+}
+ul > li{
+	border-bottom: 3px solid orange;
+}
+/*ul{
 	display: block;
 }*/
+/*Ułożenie i wygląd logo*/
 img.logo{
 	height:	50px;
 	width: 50px;
 	position: fixed;
 	left:20px;
 }
+/*Baner*/
 div.baner{
 	position: relative;
 	top: 56px;
@@ -112,6 +92,7 @@ div.baner{
 	height: 100%;
 	margin: auto;
 }
+/*Główne pole strony*/
 div.main{
 	position: relative;
 	top: 58px;
@@ -161,6 +142,7 @@ img.miniaturka{
 	text-decoration: none;
 	font-size: 1.5vw;
 }
+/*Formularz*/
 div.formularz{
 	position: relative;
 	top: 60px;
@@ -171,6 +153,7 @@ div.formularz{
 	color: white;
 	font-size: 1.5vw;
 }
+/*Stopka*/
 div.stopka{
 	position: relative;
 	top: 60px;
@@ -184,7 +167,9 @@ div.stopka{
 	padding-bottom: 4px;
 	border-top: 2px solid orange;
 	max-width: 100%;
+	padding-left: 20px;
 }
+/*Responywność*/
 @media(max-width: 650px){
 	a.komorka_menu{
 		display: block;
