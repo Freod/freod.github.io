@@ -81,6 +81,7 @@
 			document.getElementsByClassName("powiekszenie_zdj")[j].href = tab[j].obraz;
 			document.getElementsByClassName("info")[j].innerHTML += '<a class="czytaj_wiecej" href="">Czytaj wiecej...</a>';
 			document.getElementsByClassName("czytaj_wiecej")[j].href = tab[j].wiecej;
+			//document.getElementsByClassName
 		}
 	}
 //Formularz
