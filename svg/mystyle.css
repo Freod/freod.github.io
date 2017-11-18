@@ -1,0 +1,39 @@
+	.smiley #face {
+		fill: yellow;
+		stroke:black;
+	}
+	.smiley .eye {
+		fill: black;
+		visibility: visible;
+	}
+	.smiley .eye2 {
+		visibility: hidden;
+	}
+	.smiley .blush {
+		fill: orange;
+		stroke: red;
+		visibility: hidden;
+	}
+	.smiley #smile {
+		fill: transparent;
+		stroke: black;
+		stroke-width: 5;
+	}
+	.smiley #tongue {
+		visibility: hidden;
+		stroke: black;
+		stroke-width: 5;
+		fill: red;
+	}
+	.smiley:hover #tongue {
+		visibility: visible;
+	}
+	.smiley:hover .blush {
+		visibility: visible;
+	}
+	.smiley:hover .eye {
+		visibility: hidden;
+	}
+	.smiley:hover .eye2 {
+		visibility: visible;
+	}
