@@ -30,7 +30,7 @@ ol > li{
 	margin-left: auto;
 	margin-right: auto;
 	left: 0;
-	right: 0px;
+	right: 0;
 }
 ol > li:nth-child(1){
 	width: 150px;

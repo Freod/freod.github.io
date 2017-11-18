@@ -1,0 +1,49 @@
+body{
+	background-color: #000;
+}
+p#tytul{
+	color: orange;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 48px;
+	margin: 0 .85em;
+	text-decoration: none;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-transform: uppercase;
+	transition: color 1s;
+	text-shadow:1px 3px 3px #E47833;
+	text-decoration: none;
+	text-align: center;
+}
+div{
+	text-align: center;
+}
+.pod_div{
+	display:none;
+}
+img#obr1, #obr2, #obr5, #obr8, #obr9, #obr10{
+	position: relative;
+	width: 250px;
+	height:400px;
+	border: 2px solid silver;
+	background: white;
+	border-radius: 3px;
+	box-shadow: 1px 1px 3px black;
+}
+img#obr3, #obr4, #obr6, #obr7, #obr11, #obr12{
+	position: relative;
+	width: 400px;
+	height:200px;
+	border: 2px solid silver;
+	background: white;
+	border-radius: 3px;
+	box-shadow: 1px 1px 3px black;
+}
+span.tekst{
+	color: orange;
+	font-family: 'Times New Roman', serif;
+	font-size: 1.5vw;
+	height: 200px;
+	padding: 4px;
+}

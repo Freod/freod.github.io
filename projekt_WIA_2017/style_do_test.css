@@ -1,0 +1,120 @@
+/*Menu*/
+div.menu{
+	background-color: #000;
+	height: 52px;
+	position: fixed;
+	max-width: 100%;
+	text-align: center;
+	border-bottom: 4px solid orange;
+	width: 100%;
+	z-index: 1;
+}
+ol{
+	text-align: center;
+}
+ul{
+	position: relative;
+	display: none;
+}
+ol > li{
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0px;
+}
+ol > li:nth-child(1){
+	width: 150px;
+	right: 20%;
+}
+ol > li:nth-child(2){
+	width: 120px;
+}
+ol > li:nth-child(3){
+	left: 16%;
+	width: 100px;
+}
+li:hover{
+	cursor: pointer;
+	color: #FFF;
+}
+ol > li:hover > ul{
+	display: block;
+}
+li, li > a{
+	color: orange;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 48px;
+	margin: 0 .85em;
+	text-decoration: none;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-transform: uppercase;
+	transition: color 1s;
+	text-shadow:1px 3px 3px #E47833;
+	text-decoration: none;
+	background-color: #000;
+}
+ul > li{
+	border-bottom: 3px solid orange;
+}
+a:hover{
+	color: #FFF;
+}
+span.mobilne_kreski{
+	display: none;
+}
+@media(max-width: 650px){
+	div.menu{
+		text-align: right;
+	}
+	span.mobilne_kreski{
+		display: block;
+		color: orange;
+		font-size: 40px;
+		line-height: 48px;
+		padding-right: 20px;
+	}
+
+	span.mobilne_kreski:hover{
+		color: #FFF;
+		cursor: pointer;
+	}
+
+	div.menu_mobile:hover > ol{
+		display: block;
+		background: #000;
+	}
+	ol{
+		display: none;
+	}
+	li{
+		border-bottom: 3px solid orange;
+	}
+	ol > li{
+		position: relative;
+	}
+	ol > li:nth-child(1){
+		width: 100%;
+		right: 0;
+	}
+	ol > li:nth-child(2){
+		width: 100%;
+	}
+	ol > li:nth-child(3){
+		width: 100%;
+		left: 0;
+
+	}
+	ol > li:hover > ul{
+		display: block;
+	}
+}
+/*Ułożenie i wygląd logo*/
+img.logo{
+	height:	50px;
+	width: 50px;
+	position: fixed;
+	left:20px;
+}
