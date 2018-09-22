@@ -1,8 +1,65 @@
 ﻿<!doctype HTML>
-<html>
+<html lang="pl-PL">
 	<head>
+		<title>Turystyczne atrakcje pomorza wschodniego.</title>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Turystyczne atrakcje pomorza wschodniego.">
+		<meta name="author" content="Paradecki Radosław, Melzer Szymon">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="skrypts/reset_css.css" rel="stylesheet">
+		<link href="skrypts/style.css" rel="stylesheet">
+		<link rel="icon" type="image/png" href="imgs/herb_pomorskie.png">
 	</head>
 	<body>
-		<a href="/projekt_WIA_2017/index.html">Projekt WIA - Strona (2017r.)</a>
+		<div class="menu">
+			<img class="logo" src="imgs/herb_pomorskie.png">
+			<div class="menu_mobile"><span class="mobilne_kreski">☰</span>
+				<ol>
+					<li>
+						<a href="#baner">Strona Główna</a>
+					</li>
+					<li>Akapity
+						<ul>
+							<li><a href="#">Akapit 1</a></li>
+							<li><a href="#">Akapit 2</a></li>
+							<li><a href="#">Akapit 3</a></li>
+							<li><a href="#">Akapit 4</a></li>
+							<li><a href="#">Akapit 5</a></li>
+							<li><a href="#">Akapit 6</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#copy">Kontakt</a>
+					</li>
+				</ol>
+			</div>
+		</div>
+		
+		<div class="baner" id="baner">	
+			<img class="pokaz_slajdow" src="imgs/baner1.jpg">
+			<img class="pokaz_slajdow" src="imgs/baner2.png">
+			<img class="pokaz_slajdow" src="imgs/baner3.png">
+		</div>
+		<div class="main">
+			<div class="artykul">
+				
+			</div>
+		</div>
+		<div class="formularz">
+			Imię  <input type='text' id='1'><br>
+			Nazwisko  <input type='text' id='2'><br>
+			Adres e-mail  <input type='text' id='3'><br><br>
+			<textarea rows="13" cols="70">Jakie atrakcje turystyczne pomorza wschodniego powinny się tu jeszcze znaleźć?</textarea><br>
+			<input type='submit' onclick='v()'><br>
+			<span id='thx'></span>
+		</div>
+		<div class="stopka">
+			Kontakt:
+			Radosław Paradecki radek.paradecki@gmail.com
+			<!--Melzer Szymon
+			-->
+			<div class="copy" id="copy">&copy;Copyright 2017. Wykonanie: Paradecki Radosław, Melzer Szymon.</div>
+		</div>
 	</body>
+	<script src="skrypts/skrypt.js"></script>
 </html>
