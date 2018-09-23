@@ -12,20 +12,27 @@
 		setTimeout(przejscie,2500);
 	}
 //Tworzenie akapitow
-	ilosc_akapitow = 6
+	/*ilosc_akapitow = 6;
 	for(i=ilosc_akapitow; i>0; i--){
 		document.getElementsByClassName("artykul")[0].innerHTML += ('<div class="komorka_info"><a class="powiekszenie_zdj" href=""><img class="miniaturka" alt="Obraz niedziała" title="Powieksz" src=""></a><span class="info"></span></div>');
 		//document.getElementsByClassName("modal")[0].innerHTML += ('<div class="mySlides"><img class="img_powieksz" src="" style="width:100%"></div>');
 	}
 	ilosc_info = document.getElementsByClassName("info").length;
 	console.log(ilosc_info);
+	*/
+	ilosc_akapitow = 6;
+	for(i=0; i<ilosc_akapitow; i++){
+		document.getElementsByClassName("tab-content")[0].innerHTML += ('<div class="tab-pane fade paragraph" id="paragraph'+i+'" role="tabpanel" aria-labelledby="paragraph-tab"><a class="extend_img" href="" title="Powieksz"><img class="miniature" alt="Obraz niedziała" src=""></a><span class="information"></span></div>');
+		document.getElementsByClassName("dropdown-menu")[0].innerHTML += ('<a class="nav-link dropdown-item" id="paragraph-tab'+i+'" data-toggle="tab" href="#paragraph'+i+'" role="tab" aria-controls="paragraph" aria-selected="false">Akapit '+i+'</a>');
+		//document.getElementsByClassName("modal")[0].innerHTML += ('<div class="mySlides"><img class="img_powieksz" src="" style="width:100%"></div>');
+	}
 //Zamiana wygladu co drugiego akapitu
-	for(co_drugi=0; co_drugi<ilosc_info; co_drugi++){
+	/*for(co_drugi=0; co_drugi<ilosc_info; co_drugi++){
 		if(co_drugi%2!=0){
 			document.getElementsByClassName("info")[co_drugi].style = "left: 0px; right: 212px;";
 			document.getElementsByClassName("miniaturka")[co_drugi].style = "right: 0px;";
 		}
-	}
+	}*/
 //Powiekszanie
 /*	function openModal() {
 	  document.getElementById('myModal').style.display = "block";
@@ -61,8 +68,8 @@
 		slides[slideIndex-1].style.display = "block";
 	}*/
 //Ładowanie informacji
-	var xmlhttp = new XMLHttpRequest();
-	var url = "https://freod.github.io/projekt_WIA_2017/skrypts/informacje.json";
+	/*var xmlhttp = new XMLHttpRequest();
+	var url = "https://freod.github.io/skrypts/informacje.json";
 
 	xmlhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
@@ -76,14 +83,14 @@
 	
 	function wyswietlanie(tab){
 		for(j=0; j<ilosc_info; j++){
-			document.getElementsByClassName("info")[j].innerHTML += tab[j].info;
-			document.getElementsByClassName("miniaturka")[j].src = tab[j].obraz;
-			document.getElementsByClassName("powiekszenie_zdj")[j].href = tab[j].obraz;
-			document.getElementsByClassName("info")[j].innerHTML += '<a class="czytaj_wiecej" href="">Czytaj wiecej...</a>';
-			document.getElementsByClassName("czytaj_wiecej")[j].href = tab[j].wiecej;
+			document.getElementsByClassName("information")[j].innerHTML += tab[j].info;
+			document.getElementsByClassName("miniature")[j].src = tab[j].obraz;
+			document.getElementsByClassName("extend_img")[j].href = tab[j].obraz;
+			document.getElementsByClassName("information")[j].innerHTML += '<a class="czytaj_wiecej" href="">Czytaj wiecej...</a>';
+			document.getElementsByClassName("read_more")[j].href = tab[j].wiecej;
 			//document.getElementsByClassName
 		}
-	}
+	}*/
 //Formularz
 	function v(){
 	var nameReg = /^[a-zA-Z]{3,}\s+[a-zA-Z]{3,}$/;

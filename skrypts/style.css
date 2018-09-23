@@ -1,38 +1,41 @@
 ﻿/*Body i jego tło*/
 body{
-	background-image: url("https://freod.github.io/projekt_WIA_2017/imgs/tlo.jpg");
+	background-image: url("https://freod.github.io/imgs/tlo.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
 	background-size:cover;
 	max-width:100%;
 }
+.tab-content{
+	background-color: #FFF;
+}
 /*Menu*/
-div.menu{
+.nav, .nav-tabs{
 	background-color: #000;
-	height: 52px;
-	position: fixed;
-	max-width: 100%;
+	height: 68px;
+	/*position: fixed;*/
+	/*max-width: 100%;*/
 	text-align: center;
-	border-bottom: 4px solid orange;
+	/*border-bottom: 4px solid orange;*/
 	width: 100%;
-	z-index: 1;
+	/*z-index: 1;*/
 }
-ol{
+/*ol{
 	text-align: center;
-}
-ul{
-	position: relative;
-	display: none;
-}
-ol > li{
+}*/
+/*ul{
+	width: 100%;
+	border-bottom: 1px solid black;
+}*/
+/*ol > li{
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
 	left: 0;
 	right: 0;
-}
-ol > li:nth-child(1){
+}*/
+/*ol > li:nth-child(1){
 	width: 150px;
 	right: 20%;
 }
@@ -42,49 +45,52 @@ ol > li:nth-child(2){
 ol > li:nth-child(3){
 	left: 16%;
 	width: 100px;
-}
+}*/
 li:hover{
 	cursor: pointer;
 	color: #FFF;
 }
-ol > li:hover > ul{
+/*ol > li:hover > ul{
 	display: block;
-}
+}*/
+
 li, li > a{
 	color: orange;
 	font-size: 13px;
 	font-weight: 700;
-	line-height: 48px;
-	margin: 0 .85em;
+	line-height: 47px;
+	/*margin: 0 .85em;*/
 	text-decoration: none;
 	padding-top: 2px;
-	padding-bottom: 2px;
+	/*padding-bottom: 2px;*/
 	text-transform: uppercase;
-	transition: color 1s;
-	text-shadow:1px 3px 3px #E47833;
+	/*transition: color 1s;*/
+	/*text-shadow:1px 3px 3px #E47833;*/
 	text-decoration: none;
 	background-color: #000;
 }
-ul > li{
+/*ul > li{
 	border-bottom: 3px solid orange;
-}
+}*/
 a:hover{
 	color: #FFF;
 }
-span.mobilne_kreski{
+/*span.mobilne_kreski{
 	display: none;
-}
+}*/
 /*Ułożenie i wygląd logo*/
 img.logo{
 	height:	50px;
 	width: 50px;
-	position: fixed;
+	position: relative;
+	top: 8px;
+	/*position: fixed;*/
 	left:20px;
 }
 /*Baner*/
 div.baner{
 	position: relative;
-	top: 56px;
+	/*top: 56px;*/
 	height: 300px;
 	max-width: 100%;
 	border: 3px solid silver;
@@ -101,7 +107,7 @@ div.baner{
 	margin: auto;
 }
 /*Główne pole strony*/
-div.main{
+/*div.main{
 	position: relative;
 	top: 58px;
 	margin-left: 10%;
@@ -113,13 +119,13 @@ div.main{
 	box-shadow: 1px 1px 3px black;
 	max-width:100%;
 }
-div.komorka_info{
+div.paragraph{
 	position: relative;
 	max-width: 100%;
 	padding: 4px;
 	height:250px;
 }
-img.miniaturka{
+img.miniature{
 	position: absolute;
 	width:200px;
 	height:200px;
@@ -128,7 +134,7 @@ img.miniaturka{
 	border-radius: 3px;
 	box-shadow: 1px 1px 3px black;
 }
-.info{
+.information{
 	position: absolute;
 	left: 212px;
 	font-family: 'Times New Roman', serif;
@@ -137,21 +143,21 @@ img.miniaturka{
 	padding: 4px;
 	float: left;
 }
-.info:first-letter{
+.information:first-letter{
 	font-family: 'Times New Roman', serif;
 	font-size: 4vw;
 	float: left;
 }
-.czytaj_wiecej{
+.read_more{
 	position: absolute;
 	bottom: 8px;
 	right: 8px;
 	color: #CC0000;
 	text-decoration: none;
 	font-size: 1.5vw;
-}
+}*/
 /*Formularz*/
-div.formularz{
+/*div.formularz{
 	position: relative;
 	top: 60px;
 	margin-left:10%;
@@ -160,34 +166,20 @@ div.formularz{
 	max-width:100%;
 	color: white;
 	font-size: 1.5vw;
-}
+}*/
 /*Stopka*/
-div.stopka{
-	position: relative;
-	top: 60px;
-	background-color: #000;
-	text-align: left;
-	color: orange;
-	font-size: 13px;
-	font-weight: 550;
-	line-height: 15px;
-	padding-top: 2px;
-	padding-bottom: 4px;
-	border-top: 2px solid orange;
-	max-width: 100%;
-	padding-left: 20px;
-}
+
 /*Formularz*/
-input{
+/*input{
 	font-size: 1.5vw;
 	white-space: nowrap;
 	color: black;
 }
 textarea{
 	font-size: 1.5vw;
-}
+}*/
 /*Responsywność (Menu)*/
-@media(max-width: 1200px){
+/*@media(max-width: 1200px){
 	ol > li:nth-child(1){
 		right: 34%;
 	}
@@ -196,9 +188,9 @@ textarea{
 	ol > li:nth-child(3){
 		left: 25%;
 	}
-}
+}*/
 /*Responywność*/
-@media(max-width: 700px){
+/*@media(max-width: 700px){
 	div.komorka_info{
 	position: static;
 	max-width: 100%;
@@ -220,9 +212,9 @@ textarea{
 	}
 	textarea{
 		width: 100%;
-	}
+	}*/
 	/*Responsywność menu (rozsuwane, mobilne)*/
-	div.menu{
+	/*div.menu{
 		text-align: right;
 	}
 	span.mobilne_kreski{
@@ -265,4 +257,25 @@ textarea{
 	ol > li:hover > ul{
 		display: block;
 	}
+}*/
+.nav-tabs .nav-link.active {
+    color: orange;
+}
+.nav-tabs .nav-item {
+    margin-bottom: 0px;
+}
+footer{
+	position: relative;
+	/*top: 60px;*/
+	background-color: #000;
+	text-align: left;
+	color: orange;
+	font-size: 13px;
+	font-weight: 550;
+	line-height: 15px;
+	padding-top: 2px;
+	padding-bottom: 4px;
+	border-top: 2px solid orange;
+	max-width: 100%;
+	padding-left: 20px;
 }
