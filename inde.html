@@ -1,95 +1,65 @@
-<!doctype html>
+<!doctype HTML>
 <html lang="pl-PL">
 	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-		<!--Własny css-->
-		<!--link href="skrypts/reset_css.css" rel="stylesheet"-->
+		<title>Turystyczne atrakcje pomorza wschodniego.</title>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Turystyczne atrakcje pomorza wschodniego.">
+		<meta name="author" content="Paradecki Radosław, Melzer Szymon">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="skrypts/reset_css.css" rel="stylesheet">
 		<link href="skrypts/style.css" rel="stylesheet">
-		<title>Hello, world!</title>
+		<link rel="icon" type="image/png" href="imgs/herb_pomorskie.png">
 	</head>
 	<body>
-		<ul class="nav nav-tabs" id="myTab" role="tablist">
-			<li>
-				<img class="logo" src="imgs/herb_pomorskie.png"/>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Strona Główna</a>
-			</li>
-			<!--li class="nav-item">
-				<a class="nav-link" id="paragraph-tab" data-toggle="tab" href="#paragraph" role="tab" aria-controls="paragraph" aria-selected="false">Akapity</a>
-			</li-->
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Atrakcje</a>
-				<div class="dropdown-menu">
-					<!--a class="nav-link dropdown-item" id="paragraph-tab" data-toggle="tab" href="#paragraph1" role="tab" aria-controls="paragraph" aria-selected="false">Profile</a-->
-					<!--a class="dropdown-item" href="#">Something else here</a-->
-					<!--div class="dropdown-divider"></div-->
-				</div>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Kontakt</a>
-			</li>
-		</ul>
-		<div class="tab-content" id="myTabContent">
-			<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-				<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-					<div class="baner" id="baner">	
-						<img class="pokaz_slajdow" src="imgs/baner1.jpg">
-						<img class="pokaz_slajdow" src="imgs/baner2.png">
-						<img class="pokaz_slajdow" src="imgs/baner3.png">
-					</div>
-				</div>
-				<div>
-					<p>
-						opis
-					</p>
-				</div>
+		<div class="menu">
+			<img class="logo" src="imgs/herb_pomorskie.png">
+			<div class="menu_mobile"><span class="mobilne_kreski">☰</span>
+				<ol>
+					<li>
+						<a href="#baner">Strona Główna</a>
+					</li>
+					<li>Akapity
+						<ul>
+							<li><a href="#">Akapit 1</a></li>
+							<li><a href="#">Akapit 2</a></li>
+							<li><a href="#">Akapit 3</a></li>
+							<li><a href="#">Akapit 4</a></li>
+							<li><a href="#">Akapit 5</a></li>
+							<li><a href="#">Akapit 6</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#copy">Kontakt</a>
+					</li>
+				</ol>
 			</div>
-			<!--div class="tab-pane fade" id="paragraph" role="tabpanel" aria-labelledby="paragraph-tab">
-				...
-			</div>
-			<!--div class="tab-pane fade" id="paragraph" role="tabpanel" aria-labelledby="paragraph-tab">
-				1
-			</div>
-			<div class="tab-pane fade" id="paragraph" role="tabpanel" aria-labelledby="paragraph-tab">
-				2
-			</div-->
-			<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-				Co jeszcze powinno się znaleźć na naszej stronie? Napisz do nas.
-				<form>
-					<div class="col-md-6">
-						<input type="email" class="form-control" id="emailForm" placeholder="E-mail">
-						<div class="form-row">
-							<div class="col">
-								<input type="text" class="form-control" id="nameForm" placeholder="Imie">
-							</div>
-							<div class="col">
-								<input type="text" class="form-control" id="surnameForm" placeholder="Nazwisko">
-							</div>
-						</div>
-						<textarea class="form-control" id="textareaForm" rows="3" placeholder="Informacje"></textarea>
-					</div>
-				</form>
-			</div>
-			<!--div class="tab-pane fade paragraph" id="paragraph0" role="tabpanel" aria-labelledby="paragraph-tab">
-				<a class="extend_img" href="" title="Powieksz"><img class="miniature" alt="Obraz niedziała" src=""></a><span class="information"></span>
-			</div-->
 		</div>
-
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-		<!--Stary skrypt-->
-		<script src="skrypts/skrypt.js"></script>
+		
+		<div class="baner" id="baner">	
+			<img class="pokaz_slajdow" src="imgs/baner1.jpg">
+			<img class="pokaz_slajdow" src="imgs/baner2.png">
+			<img class="pokaz_slajdow" src="imgs/baner3.png">
+		</div>
+		<div class="main">
+			<div class="artykul">
+				
+			</div>
+		</div>
+		<div class="formularz">
+			Imię  <input type='text' id='1'><br>
+			Nazwisko  <input type='text' id='2'><br>
+			Adres e-mail  <input type='text' id='3'><br><br>
+			<textarea rows="13" cols="70">Jakie atrakcje turystyczne pomorza wschodniego powinny się tu jeszcze znaleźć?</textarea><br>
+			<input type='submit' onclick='v()'><br>
+			<span id='thx'></span>
+		</div>
+		<div class="stopka">
+			Kontakt:
+			Radosław Paradecki radek.paradecki@gmail.com
+			<!--Melzer Szymon
+			-->
+			<div class="copy" id="copy">&copy;Copyright 2017. Wykonanie: Paradecki Radosław, Melzer Szymon.</div>
+		</div>
 	</body>
-	<footer>
-		<!--Radosław Paradecki radek.paradecki@gmail.com-->
-		©Copyright 2018. Wykonanie: Paradecki Radosław, Melzer Szymon, Gnech Zuzia.
-	</footer>
+	<script src="skrypts/skrypt.js"></script>
 </html>
