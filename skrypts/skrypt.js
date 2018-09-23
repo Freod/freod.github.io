@@ -82,7 +82,7 @@
 	xmlhttp.send();
 	
 	function wyswietlanie(tab){
-		for(j=0; j<ilosc_info; j++){
+		for(j=0; j<ilosc_akapitow; j++){
 			document.getElementsByClassName("information")[j].innerHTML += tab[j].info;
 			document.getElementsByClassName("miniature")[j].src = tab[j].obraz;
 			document.getElementsByClassName("extend_img")[j].href = tab[j].obraz;
