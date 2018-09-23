@@ -68,7 +68,7 @@
 		slides[slideIndex-1].style.display = "block";
 	}*/
 //Ładowanie informacji
-	/*var xmlhttp = new XMLHttpRequest();
+	var xmlhttp = new XMLHttpRequest();
 	var url = "https://freod.github.io/skrypts/informacje.json";
 
 	xmlhttp.onreadystatechange = function() {
@@ -90,7 +90,7 @@
 			document.getElementsByClassName("read_more")[j].href = tab[j].wiecej;
 			//document.getElementsByClassName
 		}
-	}*/
+	}
 //Formularz
 	function v(){
 	var nameReg = /^[a-zA-Z]{3,}\s+[a-zA-Z]{3,}$/;
