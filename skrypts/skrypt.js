@@ -1,5 +1,5 @@
 //Baner
-	var indeks_slajd = 0;
+	/*var indeks_slajd = 0;
 	przejscie();	
 	function przejscie(){
 		var slajdy = document.getElementsByClassName("pokaz_slajdow");
@@ -10,22 +10,8 @@
 		if(indeks_slajd>slajdy.length){indeks_slajd=1}
 		slajdy[indeks_slajd-1].style.display = "block";
 		setTimeout(przejscie,2500);
-	}
-//Tworzenie akapitow
-	/*ilosc_akapitow = 6;
-	for(i=ilosc_akapitow; i>0; i--){
-		document.getElementsByClassName("artykul")[0].innerHTML += ('<div class="komorka_info"><a class="powiekszenie_zdj" href=""><img class="miniaturka" alt="Obraz niedziała" title="Powieksz" src=""></a><span class="info"></span></div>');
-		//document.getElementsByClassName("modal")[0].innerHTML += ('<div class="mySlides"><img class="img_powieksz" src="" style="width:100%"></div>');
-	}
-	ilosc_info = document.getElementsByClassName("info").length;
-	console.log(ilosc_info);
-	*/
-	ilosc_akapitow = 6;
-	for(i=0; i<ilosc_akapitow; i++){
-		document.getElementsByClassName("tab-content")[0].innerHTML += ('<div class="tab-pane fade paragraph" id="paragraph'+i+'" role="tabpanel" aria-labelledby="paragraph-tab"><a class="extend_img" href="" title="Powieksz"><img class="miniature" alt="Obraz niedziała" src=""></a><span class="information"></span></div>');
-		document.getElementsByClassName("dropdown-menu")[0].innerHTML += ('<a class="nav-link dropdown-item" id="paragraph-tab'+i+'" data-toggle="tab" href="#paragraph'+i+'" role="tab" aria-controls="paragraph" aria-selected="false">Akapit '+i+'</a>');
-		//document.getElementsByClassName("modal")[0].innerHTML += ('<div class="mySlides"><img class="img_powieksz" src="" style="width:100%"></div>');
-	}
+	}*/
+
 //Zamiana wygladu co drugiego akapitu
 	/*for(co_drugi=0; co_drugi<ilosc_info; co_drugi++){
 		if(co_drugi%2!=0){
@@ -75,12 +61,30 @@
 		if (this.readyState == 4 && this.status == 200) {
 			var myArr = JSON.parse(this.responseText);
 			console.log(myArr);
+			tworzenie(myArr.length);
 			wyswietlanie(myArr);
 		}
 	};
 	xmlhttp.open("GET", url, true);
 	xmlhttp.send();
 	
+	//Tworzenie akapitow
+	/*ilosc_akapitow = 6;
+	for(i=ilosc_akapitow; i>0; i--){
+		document.getElementsByClassName("artykul")[0].innerHTML += ('<div class="komorka_info"><a class="powiekszenie_zdj" href=""><img class="miniaturka" alt="Obraz niedziała" title="Powieksz" src=""></a><span class="info"></span></div>');
+		//document.getElementsByClassName("modal")[0].innerHTML += ('<div class="mySlides"><img class="img_powieksz" src="" style="width:100%"></div>');
+	}
+	ilosc_info = document.getElementsByClassName("info").length;
+	console.log(ilosc_info);
+	*/
+	function tworzenie(ilosc_akapitow){
+		for(i=0; i<ilosc_akapitow; i++){
+			document.getElementsByClassName("tab-content")[0].innerHTML += ('<div class="tab-pane fade paragraph" id="paragraph'+i+'" role="tabpanel" aria-labelledby="paragraph-tab"><a class="extend_img" href="" title="Powieksz"><img class="miniature" alt="Obraz niedziała" src=""></a><span class="information"></span></div>');
+			document.getElementsByClassName("dropdown-menu")[0].innerHTML += ('<a class="nav-link dropdown-item" id="paragraph-tab'+i+'" data-toggle="tab" href="#paragraph'+i+'" role="tab" aria-controls="paragraph" aria-selected="false">Akapit '+i+'</a>');
+			//document.getElementsByClassName("modal")[0].innerHTML += ('<div class="mySlides"><img class="img_powieksz" src="" style="width:100%"></div>');
+		}
+	}
+	//Wyswietlanie
 	function wyswietlanie(tab){
 		for(j=0; j<ilosc_akapitow; j++){
 			document.getElementsByClassName("information")[j].innerHTML += tab[j].info;
