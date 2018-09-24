@@ -12,10 +12,8 @@
 		<title>Hello, world!</title>
 	</head>
 	<body>
+		<!--img alt="Logo" title="Logo" class="logo" src="imgs/herb_pomorskie.png"/-->
 		<ul class="nav nav-tabs" id="myTab" role="tablist">
-			<li>
-				<img class="logo" src="imgs/herb_pomorskie.png"/>
-			</li>
 			<li class="nav-item">
 				<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Strona Główna</a>
 			</li>
@@ -42,12 +40,11 @@
 						<img class="pokaz_slajdow" src="imgs/baner2.png">
 						<img class="pokaz_slajdow" src="imgs/baner3.png">
 					</div>
+					<div class="col-12">
+						Strona na przedmiot WIA. O temacie atrakcje pomorza wschodniego. Wykonanana przez Radosława Paradeckiego, Szymona Melzera, Zuzie Gnech. Z wykorzystaniem HTML, CSS, JS, Json, Bootstrap.
+					</div>
 				</div>
-				<div>
-					<p>
-						opis
-					</p>
-				</div>
+
 			</div>
 			<!--div class="tab-pane fade" id="paragraph" role="tabpanel" aria-labelledby="paragraph-tab">
 				...
@@ -59,21 +56,34 @@
 				2
 			</div-->
 			<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-				Co jeszcze powinno się znaleźć na naszej stronie? Napisz do nas.
-				<form>
-					<div class="col-md-6">
-						<input type="email" class="form-control" id="emailForm" placeholder="E-mail">
-						<div class="form-row">
-							<div class="col">
-								<input type="text" class="form-control" id="nameForm" placeholder="Imie">
+				<div class="col-12">
+					Co jeszcze powinno się znaleźć na naszej stronie? Napisz do nas.
+					<form>
+						<div class="col-12">
+							<div class="col-12">
+								E-mail:
+								<input type="email" class="form-control" id="emailForm" placeholder="E-mail">
 							</div>
-							<div class="col">
-								<input type="text" class="form-control" id="surnameForm" placeholder="Nazwisko">
+							<div class="form-row col-12">
+								<div class="col-6">
+									Imie
+									<input type="text" class="form-control" id="nameForm" placeholder="Imie">
+								</div>
+								<div class="col-6">
+									Nazwisko
+									<input type="text" class="form-control" id="surnameForm" placeholder="Nazwisko">
+								</div>
+							</div>
+							<div class="col-12">
+								Wiadomość:
+								<textarea class="form-control" id="textareaForm" rows="3" placeholder="Wiadomość"></textarea>
+							</div>
+							<div class="col-12">
+								<input type="submit">
 							</div>
 						</div>
-						<textarea class="form-control" id="textareaForm" rows="3" placeholder="Informacje"></textarea>
-					</div>
-				</form>
+					</form>
+				</div>
 			</div>
 			<!--div class="tab-pane fade paragraph" id="paragraph0" role="tabpanel" aria-labelledby="paragraph-tab">
 				<a class="extend_img" href="" title="Powieksz"><img class="miniature" alt="Obraz niedziała" src=""></a><span class="information"></span>
@@ -88,7 +98,7 @@
 		<!--Stary skrypt-->
 		<script src="skrypts/skrypt.js"></script>
 	</body>
-	<footer>
+	<footer class="col">
 		<!--Radosław Paradecki radek.paradecki@gmail.com-->
 		©Copyright 2018. Wykonanie: Paradecki Radosław, Melzer Szymon, Gnech Zuzia.
 	</footer>
