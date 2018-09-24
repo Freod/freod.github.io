@@ -127,9 +127,9 @@ div.paragraph{
 	max-width: 100%;
 	padding: 4px;
 	height:250px;
-}
+}*/
 img.miniature{
-	position: absolute;
+	/*position: absolute;*/
 	width:200px;
 	height:200px;
 	border: 2px solid silver;
@@ -137,7 +137,7 @@ img.miniature{
 	border-radius: 3px;
 	box-shadow: 1px 1px 3px black;
 }
-.information{
+/*.information{
 	position: absolute;
 	left: 212px;
 	font-family: 'Times New Roman', serif;
