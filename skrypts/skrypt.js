@@ -60,9 +60,9 @@
 	xmlhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
 			var myArr = JSON.parse(this.responseText);
-			console.log(myArr);
+			//console.log(myArr);
 			tworzenie(myArr.length);
-			wyswietlanie(myArr);
+			wyswietlanie(myArr, myArr.length);
 		}
 	};
 	xmlhttp.open("GET", url, true);
@@ -85,7 +85,7 @@
 		}
 	}
 	//Wyswietlanie
-	function wyswietlanie(tab){
+	function wyswietlanie(tab, ilosc_akapitow){
 		for(j=0; j<ilosc_akapitow; j++){
 			document.getElementsByClassName("information")[j].innerHTML += tab[j].info;
 			document.getElementsByClassName("miniature")[j].src = tab[j].obraz;
