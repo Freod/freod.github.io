@@ -83,7 +83,7 @@
 			document.getElementsByClassName("tab-content")[0].innerHTML += ('<div class="tab-pane fade paragraph" id="paragraph'+i+'" role="tabpanel" aria-labelledby="paragraph-tab"><a class="extend_img" href="" title="Powieksz"><img class="miniature" alt="Obraz niedziała" src=""></a><span class="information"></span></div>');
 			document.getElementsByClassName("dropdown-menu")[0].innerHTML += ('<a class="nav-link dropdown-item" id="paragraph-tab'+i+'" data-toggle="tab" href="#paragraph'+i+'" role="tab" aria-controls="paragraph" aria-selected="false">Akapit '+i+'</a>');
 			/*tab*/
-			document.getElementById("paragraph").innerHTML += ('<a class="extend_img" href="" title="Powieksz"><img class="miniature" alt="Obraz niedziała" src=""></a><span class="information"></span><span class="read_more"></span>');
+			document.getElementById("paragraph").innerHTML += ('<a class="extend_img" href="" title="Powieksz"><img class="miniature" alt="Obraz niedziała" src=""></a><span class="information"></span>');
 			//document.getElementsByClassName("modal")[0].innerHTML += ('<div class="mySlides"><img class="img_powieksz" src="" style="width:100%"></div>');
 		}
 	}
@@ -93,8 +93,8 @@
 			document.getElementsByClassName("information")[j].innerHTML += tab[j].info;
 			document.getElementsByClassName("miniature")[j].src = tab[j].obraz;
 			document.getElementsByClassName("extend_img")[j].href = tab[j].obraz;
-			document.getElementsByClassName("information")[j].innerHTML += '<a class="czytaj_wiecej" href="">Czytaj wiecej...</a>';
-			//document.getElementsByClassName("read_more")[j].href = tab[j].wiecej;
+			document.getElementsByClassName("information")[j].innerHTML += '<a class="read_more" href="">Czytaj wiecej...</a>';
+			document.getElementsByClassName("read_more")[j].href = tab[j].wiecej;
 			//document.getElementsByClassName
 		}
 	}
