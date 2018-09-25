@@ -94,7 +94,7 @@
 			document.getElementsByClassName("miniature")[j].src = tab[j].obraz;
 			document.getElementsByClassName("extend_img")[j].href = tab[j].obraz;
 			document.getElementsByClassName("information")[j].innerHTML += '<a class="czytaj_wiecej" href="">Czytaj wiecej...</a>';
-			document.getElementsByClassName("read_more")[j].href = tab[j].wiecej;
+			//document.getElementsByClassName("read_more")[j].href = tab[j].wiecej;
 			//document.getElementsByClassName
 		}
 	}
