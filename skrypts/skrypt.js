@@ -93,7 +93,7 @@
 			document.getElementsByClassName("information")[j].innerHTML += tab[j].info;
 			document.getElementsByClassName("miniature")[j].src = tab[j].obraz;
 			document.getElementsByClassName("extend_img")[j].href = tab[j].obraz;
-			document.getElementsByClassName("information")[j].innerHTML += '<a class="read_more" href="">Czytaj wiecej...</a>';
+			document.getElementsByClassName("information")[j].innerHTML += '<div class="col-md-1 float-right float-down"><a class="read_more" href="">Czytaj wiecej...</a></div>';
 			document.getElementsByClassName("read_more")[j].href = tab[j].wiecej;
 			//document.getElementsByClassName
 		}
