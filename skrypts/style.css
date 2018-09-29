@@ -136,7 +136,13 @@ img.miniature{
 	background: white;
 	border-radius: 3px;
 	box-shadow: 1px 1px 3px black;
+	float: left;
+	margin-right: 15px;
 }
+.information{
+	padding: 20px;
+}
+
 /*.information{
 	position: absolute;
 	left: 212px;
