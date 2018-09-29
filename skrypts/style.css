@@ -141,6 +141,7 @@ img.miniature{
 }
 .information{
 	padding: 20px;
+	min-height: 200px;
 }
 
 /*.information{
