@@ -282,3 +282,8 @@ footer{
 	max-width: 100%;
 	padding-left: 20px;
 }
+@media(max-width: 576px){
+	#navbartoller{
+		height: 204px;
+	}
+}
