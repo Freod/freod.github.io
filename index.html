@@ -9,7 +9,8 @@
 		<!--Własny css-->
 		<!--link href="skrypts/reset_css.css" rel="stylesheet"-->
 		<link href="skrypts/style.css" rel="stylesheet">
-		<title>Hello, world!</title>
+		<link rel="icon" type="image/png" href="imgs/herb_pomorskie.png">
+		<title>Turystyczne atrakcje pomorza wschodniego.</title>
 	</head>
 	<body>
 		<!--img alt="Logo" title="Logo" class="logo" src="imgs/herb_pomorskie.png"/-->
@@ -83,21 +84,21 @@
 						<div class="col-12">
 							<div class="col-12">
 								E-mail:
-								<input type="email" class="form-control" id="emailForm" placeholder="E-mail">
+								<input type="email" class="form-control" id="emailForm" placeholder="E-mail" name="mail" required>
 							</div>
 							<div class="form-row col-12">
 								<div class="col-md-6">
 									Imie
-									<input type="text" class="form-control" id="nameForm" placeholder="Imie">
+									<input type="text" class="form-control" id="nameForm" placeholder="Imie" name="name" required>
 								</div>
 								<div class="col-md-6">
 									Nazwisko
-									<input type="text" class="form-control" id="surnameForm" placeholder="Nazwisko">
+									<input type="text" class="form-control" id="surnameForm" placeholder="Nazwisko" name="surname" required>
 								</div>
 							</div>
 							<div class="col-12">
 								Wiadomość:
-								<textarea class="form-control" id="textareaForm" rows="3" placeholder="Wiadomość"></textarea>
+								<textarea class="form-control" id="textareaForm" rows="3" placeholder="Wiadomość" name="message" required></textarea>
 							</div>
 							<div class="col-12">
 								<input type="submit">

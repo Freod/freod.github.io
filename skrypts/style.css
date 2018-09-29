@@ -96,11 +96,11 @@ div.baner{
 	/*top: 56px;*/
 	height: 300px;
 	max-width: 100%;
-	border: 3px solid silver;
+	/*border: 3px solid silver;*/
 	background: white;
-	padding: 5px;
-	border-radius: 3px;
-	box-shadow: 1px 1px 3px black;
+	/*padding: 5px;*/
+	/*border-radius: 3px;*/
+	/*box-shadow: 1px 1px 3px black;*/
 }
 .pokaz_slajdow{
 	display:none;
