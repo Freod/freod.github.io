@@ -141,9 +141,10 @@ img.miniature{
 }
 .information{
 	padding: 20px;
-	min-height: 200px;
 }
-
+.pudelko{
+	min-height: 250px;
+}
 /*.information{
 	position: absolute;
 	left: 212px;
