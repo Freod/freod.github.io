@@ -72,7 +72,7 @@
 			<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
 				<div class="container">
 					Co jeszcze powinno się znaleźć na naszej stronie? Napisz do nas.
-					<form>
+					<form action="" method="post">
 						<div class="col-12">
 							<div class="col-12">
 								E-mail:
