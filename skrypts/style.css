@@ -275,7 +275,7 @@ textarea{
 .nav-tabs .nav-item {
     margin-bottom: 0px;
 }
-footer{
+.footer{
 	position: relative;
 	/*top: 60px;*/
 	background-color: #000;
@@ -297,4 +297,7 @@ footer{
 }
 .container{
 	padding: 20px;
+}
+nav{
+	background: black;
 }

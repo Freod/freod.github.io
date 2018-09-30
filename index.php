@@ -14,7 +14,7 @@
 	</head>
 	<body>
 		<!--img alt="Logo" title="Logo" class="logo" src="imgs/herb_pomorskie.png"/-->
-		<nav class="navbar-expand-md navbar-dark bg-dark">
+		<nav class="navbar-expand-md navbar-dark">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartoller" aria-controls="navbartoller" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -111,18 +111,23 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 		<!--Stary skrypt-->
 		<script src="skrypts/skrypt.js"></script>
+		<div class="footer col">
+			<!--Radosław Paradecki radek.paradecki@gmail.com-->
+			©Copyright 2018. Wykonanie: Paradecki Radosław, Melzer Szymon, Gnech Zuzia.
+		</div>
 	</body>
-	<footer class="col">
-		<!--Radosław Paradecki radek.paradecki@gmail.com-->
-		©Copyright 2018. Wykonanie: Paradecki Radosław, Melzer Szymon, Gnech Zuzia.
-	</footer>
 	<?php
 		if(isset( $_POST["mail"]) && isset( $_POST["name"]) && isset( $_POST["surname"]) && isset( $_POST["message"])){
-			$msg = $_POST["message"]."Pozdrawiam/n ".$_POST["name"].$_POST["surname"]; //"First line of text\nSecond line of text";
-			mail("radek.paradecki@gmail.com", "Mail ze strony", $msg);
-		}
-		else{
-			echo "Email nie został wysłany.";
+			$od = "\nFrom: poczta@radekparadecki.cba.pl";
+			$email = "poczta@radekparadecki.cba.pl";
+			$subject = "CBAMail od ".$_POST["mail"];
+			$message = "Dziękujemy za wysłanie formularza";	
+			$error = "Wystąpił błąd podczas wysyłania formularza";
+			$charset = "UTF-8";
+			$head = "MIME-Version: 1.0\r\n" . "Content-Type: text/plain; charset=$charset\r\n" . "Content-Transfer-Encoding: 8bit";
+			$body = $_POST["mail"]."\n".$_POST["message"]."\nPodrawiam\n".$_POST["surname"]." ".$_POST["name"];
+			mail($email, "=?$charset?B?" . base64_encode($subject) . "?=", $body, $head, $od) ? $message : $error;
+			echo "Dziękujemy za wysłanie maila.";
 		}
 	?>
 </html>
