@@ -118,8 +118,11 @@
 	</footer>
 	<?php
 		if(isset( $_POST["mail"]) && isset( $_POST["name"]) && isset( $_POST["surname"]) && isset( $_POST["message"])){
-			//$msg = $_POST["message"]; //"First line of text\nSecond line of text";
-			//mail("radek.paradecki@gmail.com", "Mail ze strony", $msg);
+			$msg = $_POST["message"]."Pozdrawiam/n ".$_POST["name"].$_POST["surname"]; //"First line of text\nSecond line of text";
+			mail("radek.paradecki@gmail.com", "Mail ze strony", $msg);
+		}
+		else{
+			echo "Email nie został wysłany.";
 		}
 	?>
 </html>
